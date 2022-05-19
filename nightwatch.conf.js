@@ -238,7 +238,7 @@ module.exports = {
         server_path: '', // Leave empty if @nightwatch/selenium-server is installed
         command: 'standalone', // Selenium 4 only
         cli_args: {
-          //'webdriver.gecko.driver': '',
+          // 'webdriver.gecko.driver': '',
           // 'webdriver.chrome.driver': ''
         }
       },

@@ -6,7 +6,9 @@
   "scripts": {
     "test:chrome": "nightwatch --env chrome",
     "test:firefox": "nightwatch --env firefox",
-    "test:safari": "nightwatch --env safari"
+    "test:safari": "nightwatch --env safari",
+    "test:selenium:chrome": "nightwatch --env selenium.chrome",
+    "test:selenium:firefox": "nightwatch --env selenium.firefox"
   },
   "keywords": [],
   "author": "",
