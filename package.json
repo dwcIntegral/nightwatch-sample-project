@@ -8,7 +8,9 @@
     "test:firefox": "nightwatch --env firefox",
     "test:safari": "nightwatch --env safari",
     "test:selenium:chrome": "nightwatch --env selenium.chrome",
-    "test:selenium:firefox": "nightwatch --env selenium.firefox"
+    "test:selenium:firefox": "nightwatch --env selenium.firefox",
+    "test:browserstack:chrome": "nightwatch --env browserstack.chrome",
+    "test:browserstack:firefox": "nightwatch --env browserstack.firefox"
   },
   "keywords": [],
   "author": "",
@@ -18,9 +20,7 @@
     "chromedriver": "^101.0.0",
     "geckodriver": "^3.0.1",
     "jest": "^28.1.0",
-    "nightwatch": "^2.1.7"
-  },
-  "dependencies": {
-    "nightwatch-network-requests": "^1.0.0"
+    "nightwatch": "^2.1.7",
+    "nightwatch-network-requests": "git+ssh://git@github.com/integralads/nightwatch-network-requests.git"
   }
 }
