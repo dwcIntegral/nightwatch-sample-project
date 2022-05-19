@@ -37,3 +37,4 @@ yarn-error.log*
 #nightwatch
 tests_output
 logs
+_selenium-server.log
