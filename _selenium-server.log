@@ -1,0 +1,10 @@
+18:34:50.189 INFO [LoggingOptions.configureLogEncoding] - Using the system default encoding
+18:34:50.194 INFO [OpenTelemetryTracer.createTracer] - Using OpenTelemetry for tracing
+18:34:50.865 INFO [NodeOptions.getSessionFactories] - Detected 12 available processors
+18:34:50.926 INFO [NodeOptions.discoverDrivers] - Discovered 2 driver(s)
+18:34:50.945 INFO [NodeOptions.report] - Adding Safari for {"browserName": "safari"} 1 times
+18:34:50.945 INFO [NodeOptions.report] - Adding Safari Technology Preview for {"browserName": "Safari Technology Preview"} 1 times
+18:34:50.967 INFO [Node.<init>] - Binding additional locator mechanisms: name, relative, id
+18:34:50.988 INFO [LocalDistributor.add] - Added node e97773f5-2adf-4c77-96bd-ffaac707d606 at http://192.168.0.14:4444. Health check every 120s
+18:34:50.999 INFO [GridModel.setAvailability] - Switching node e97773f5-2adf-4c77-96bd-ffaac707d606 (uri: http://192.168.0.14:4444) from DOWN to UP
+18:34:51.199 INFO [Standalone.execute] - Started Selenium Standalone 4.1.2 (revision 9a5a329c5a): http://192.168.0.14:4444
