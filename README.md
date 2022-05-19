@@ -6,7 +6,7 @@
 npm i -g pnpm
 ```
 
-2. Install Dependencise
+2. Install Dependencies
 ```bash
 pnpm i 
 ```
