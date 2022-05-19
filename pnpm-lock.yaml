@@ -6,6 +6,7 @@ specifiers:
   geckodriver: ^3.0.1
   jest: ^28.1.0
   nightwatch: ^2.1.7
+  nightwatch-network-requests: git+ssh://git@github.com/integralads/nightwatch-network-requests.git
 
 devDependencies:
   '@nightwatch/selenium-server': 4.1.2
@@ -13,6 +14,7 @@ devDependencies:
   geckodriver: 3.0.1
   jest: 28.1.0
   nightwatch: 2.1.7_wsvuiy2vivh737xv32aj3iqwze
+  nightwatch-network-requests: link:node_modules/nightwatch-network-requests
 
 packages:
 
