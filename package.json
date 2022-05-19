@@ -10,7 +10,11 @@
     "test:selenium:chrome": "nightwatch --env selenium.chrome",
     "test:selenium:firefox": "nightwatch --env selenium.firefox",
     "test:browserstack:chrome": "nightwatch --env browserstack.chrome",
-    "test:browserstack:firefox": "nightwatch --env browserstack.firefox"
+    "test:browserstack:firefox": "nightwatch --env browserstack.firefox",
+    "test:browserstack:edge": "nightwatch --env browserstack.edge",
+    "test:browserstack:safari": "nightwatch --env browserstack.safari",
+    "test:browserstack:android": "nightwatch --env browserstack.android",
+    "test:browserstack:ios": "nightwatch --env browserstack.ios"
   },
   "keywords": [],
   "author": "",
