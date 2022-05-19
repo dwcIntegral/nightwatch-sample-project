@@ -36,3 +36,4 @@ yarn-error.log*
 
 #nightwatch
 tests_output
+logs
