@@ -9,7 +9,7 @@
     "test:safari": "nightwatch --env safari",
     "test:selenium:chrome": "nightwatch --env selenium.chrome",
     "test:selenium:firefox": "nightwatch --env selenium.firefox",
-    "test:browserstack:chrome": "nightwatch --env browserstack.chrome",
+    "test:browserstack:chrome": "node scripts/browserstack.local.js --env browserstack.chrome",
     "test:browserstack:firefox": "nightwatch --env browserstack.firefox",
     "test:browserstack:edge": "nightwatch --env browserstack.edge",
     "test:browserstack:safari": "nightwatch --env browserstack.safari",
@@ -21,6 +21,7 @@
   "license": "ISC",
   "devDependencies": {
     "@nightwatch/selenium-server": "^4.1.2",
+    "browserstack-local": "^1.4.8",
     "chromedriver": "^101.0.0",
     "geckodriver": "^3.0.1",
     "jest": "^28.1.0",

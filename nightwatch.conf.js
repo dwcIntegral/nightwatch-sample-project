@@ -156,6 +156,7 @@ module.exports = {
       // More info on configuring capabilities can be found on:
       // https://www.browserstack.com/automate/capabilities?tag=selenium-4
       desiredCapabilities: {
+        'browserstack.local': true,
         'bstack:options' : {
           userName: '${BROWSERSTACK_USER}',
           accessKey: '${BROWSERSTACK_KEY}',
@@ -181,7 +182,7 @@ module.exports = {
     },
 
     'browserstack.chrome': {
-      extends: 'browserstack',
+      extends: 'browserstack.local',
       desiredCapabilities: {
         browserName: 'chrome',
         chromeOptions : {
