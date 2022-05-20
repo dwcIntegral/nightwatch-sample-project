@@ -12,6 +12,9 @@
 //            |___/
 //
 
+// Need this for linked package during dev
+const pnpmGlobalDir = `${process.env['PNPM_HOME']}/global/5`
+
 module.exports = {
   // An array of folders (excluding subfolders) where your tests are located;
   // if this is not specified, the test source must be passed as the second argument to the test runner.
@@ -21,7 +24,7 @@ module.exports = {
   page_objects_path: ['node_modules/nightwatch/examples/pages/'],
 
   // See https://nightwatchjs.org/guide/extending-nightwatch/custom-commands.html
-  custom_commands_path: ['node_modules/nightwatch-network-requests/dist/commands/'],
+  custom_commands_path: [`${pnpmGlobalDir}/node_modules/nightwatch-network-requests/dist/commands/`],
 
   // See https://nightwatchjs.org/guide/extending-nightwatch/custom-assertions.html
   custom_assertions_path: '',
@@ -186,6 +189,19 @@ module.exports = {
         browserName: 'chrome',
         chromeOptions : {
           w3c: true
+        }
+      }
+    },
+
+    'browserstack.ios': {
+      extends: 'browserstack',
+      desiredCapabilities: {
+        os_version : '14',
+        device : 'iPhone 12',
+        real_mobile : 'true',
+        browserName: 'safari',
+        chromeOptions : {
+          w3c: false
         }
       }
     },
