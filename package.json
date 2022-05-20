@@ -25,6 +25,6 @@
     "geckodriver": "^3.0.1",
     "jest": "^28.1.0",
     "nightwatch": "^2.1.7",
-    "nightwatch-network-requests": "git+ssh://git@github.com/integralads/nightwatch-network-requests.git"
+    "nightwatch-network-requests": "git+ssh://git@github.com/integralads/nightwatch-network-requests.git#add-waitforrequest"
   }
 }
