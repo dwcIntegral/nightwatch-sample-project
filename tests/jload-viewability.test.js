@@ -14,7 +14,7 @@ describe('Jload', () => {
     // Maybe try CDP Events next?
     await browser.url('http://localhost:3000/jload-ad/direct');
     
-    await browser.expect.element('body').to.be.present;
+   // await browser.expect.element('body').to.be.present;
 
     const jloadTagRequestRegExp = RegExp(/\/jload\?/);
     const jloadRequest = await browser.waitForRequest(jloadTagRequestRegExp, networkRequest);
