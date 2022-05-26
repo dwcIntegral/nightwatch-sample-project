@@ -14,7 +14,7 @@ describe('Jload', () => {
     // Maybe try CDP Events next?
     await browser.url('http://localhost:3000/jload-ad/direct');
     
-   // await browser.expect.element('body').to.be.present;
+    await browser.expect.element('body').to.be.present;
 
     const jloadTagRequestRegExp = RegExp(/\/jload\?/);
     const jloadRequest = await browser.waitForRequest(jloadTagRequestRegExp, networkRequest);
@@ -28,8 +28,10 @@ describe('Jload', () => {
     const inViewRequestRegExp = RegExp(/pingTime:1/);
     await browser.waitForRequest(inViewRequestRegExp, networkRequest);
     console.log('Recieved Viewability Ping');
-
-      
+    
+    // Custom Pause command from nightwatch-network-requests
+    await browser.customPause(2000)
+     
     await browser.end();
   });
 });

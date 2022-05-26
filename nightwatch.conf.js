@@ -157,6 +157,7 @@ module.exports = {
       // More info on configuring capabilities can be found on:
       // https://www.browserstack.com/automate/capabilities?tag=selenium-4
       desiredCapabilities: {
+        'browserstack.local': true,
         'bstack:options' : {
           userName: '${BROWSERSTACK_USER}',
           accessKey: '${BROWSERSTACK_KEY}',
@@ -182,7 +183,7 @@ module.exports = {
     },
 
     'browserstack.chrome': {
-      extends: 'browserstack',
+      extends: 'browserstack.local',
       desiredCapabilities: {
         browserName: 'chrome',
         chromeOptions : {
@@ -198,11 +199,10 @@ module.exports = {
       }
     },
 
-    'browserstack.ie': {
+    'browserstack.edge': {
       extends: 'browserstack',
       desiredCapabilities: {
-        browserName: 'internet explorer',
-        browserVersion: '11.0'
+        browserName: 'edge'
       }
     },
 
@@ -224,6 +224,32 @@ module.exports = {
       extends: 'browserstack.local',
       desiredCapabilities: {
         browserName: 'firefox'
+      }
+    },
+    'browserstack.android': {
+      extends: 'browserstack',
+      desiredCapabilities: {
+        os_version : '10.0',
+        device : 'Samsung Galaxy S20',
+        real_mobile : 'true',
+        browserName: 'chrome',
+        chromeOptions : {
+          w3c: false
+        }
+      }
+    },
+
+    // environment to run tests on iOS devices
+    'browserstack.ios': {
+      extends: 'browserstack',
+      desiredCapabilities: {
+        os_version : '14',
+        device : 'iPhone 12',
+        real_mobile : 'true',
+        browserName: 'safari',
+        chromeOptions : {
+          w3c: false
+        }
       }
     },
     //////////////////////////////////////////////////////////////////////////////////
