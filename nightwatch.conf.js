@@ -45,9 +45,7 @@ module.exports = {
         on_failure: true
       },
 
-      desiredCapabilities: {
-        browserName : 'firefox'
-      },
+      desiredCapabilities: {},
 
       webdriver: {
         start_process: true,
@@ -94,6 +92,9 @@ module.exports = {
     chrome: {
       desiredCapabilities : {
         browserName : 'chrome',
+        'goog:loggingPrefs': {
+          'browser': 'ALL'
+        },
         'goog:chromeOptions' : {
           // More info on Chromedriver: https://sites.google.com/a/chromium.org/chromedriver/
           //
@@ -278,6 +279,9 @@ module.exports = {
       extends: 'selenium_server',
       desiredCapabilities: {
         browserName: 'chrome',
+        'goog:loggingPrefs': {
+          'browser': 'ALL'
+        },
         chromeOptions : {
           w3c: true
         }
